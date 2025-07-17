@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aan Raza.com</title>
+    <title>Aan Raza - Portfolio</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts - Inter -->
@@ -11,23 +11,23 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f0f4f8; /* A very light blue-gray for overall background */
-            color: #2d3748; /* Darker text for readability */
+            background-color: #1a1a1a; /* Dark gray for overall background */
+            color: #e0e0e0; /* Light gray text for readability */
         }
         /* Custom scrollbar for aesthetics */
         ::-webkit-scrollbar {
             width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #e2e8f0;
+            background: #333333; /* Darker track */
             border-radius: 10px;
         }
         ::-webkit-scrollbar-thumb {
-            background: #94a3b8;
+            background: #7000BF; /* Vibrant purple scrollbar */
             border-radius: 10px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #64748b;
+            background: #5a0099; /* Darker purple on hover */
         }
         .section-padding {
             padding: 4rem 1rem; /* Default padding */
@@ -79,63 +79,63 @@
 
         /* Custom gradient for skill/project cards */
         .card-gradient {
-            background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
+            background: linear-gradient(135deg, #222222 0%, #1a1a1a 100%); /* Darker card background */
         }
         .card-gradient:hover {
-            background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+            background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%); /* Even darker on hover */
         }
     </style>
 </head>
 <body class="antialiased">
 
     <!-- Header -->
-    <header class="bg-white shadow-lg fixed w-full z-50">
+    <header class="bg-[#000] shadow-lg fixed w-full z-50">
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#home" class="text-2xl font-extrabold text-indigo-700 rounded-md p-2 hover:bg-indigo-50 transition duration-300">Your Name</a>
+            <a href="#home" class="text-2xl font-extrabold text-[#7000BF] rounded-md p-2 hover:bg-gray-900 transition duration-300">Aan Raza</a>
             <div class="hidden md:flex space-x-6">
-                <a href="#about" class="text-gray-700 hover:text-indigo-700 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-100">About</a>
-                <a href="#skills" class="text-gray-700 hover:text-indigo-700 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-100">Skills</a>
-                <a href="#projects" class="text-gray-700 hover:text-indigo-700 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-100">Projects</a>
-                <a href="#contact" class="text-gray-700 hover:text-indigo-700 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-100">Contact</a>
+                <a href="#about" class="text-gray-300 hover:text-[#7000BF] font-medium transition duration-300 rounded-md p-2 hover:bg-gray-900">About</a>
+                <a href="#skills" class="text-gray-300 hover:text-[#7000BF] font-medium transition duration-300 rounded-md p-2 hover:bg-gray-900">Skills</a>
+                <a href="#projects" class="text-gray-300 hover:text-[#7000BF] font-medium transition duration-300 rounded-md p-2 hover:bg-gray-900">Projects</a>
+                <a href="#contact" class="text-gray-300 hover:text-[#7000BF] font-medium transition duration-300 rounded-md p-2 hover:bg-gray-900">Contact</a>
             </div>
             <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-indigo-700 focus:outline-none">
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-[#7000BF] focus:outline-none">
                 <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </button>
         </nav>
         <!-- Mobile Menu Overlay -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 shadow-lg">
-            <a href="#about" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md text-lg">About</a>
-            <a href="#skills" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md text-lg">Skills</a>
-            <a href="#projects" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md text-lg">Projects</a>
-            <a href="#contact" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md text-lg">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-[#000] py-4 shadow-lg">
+            <a href="#about" class="block px-4 py-3 text-gray-300 hover:bg-gray-900 rounded-md text-lg">About</a>
+            <a href="#skills" class="block px-4 py-3 text-gray-300 hover:bg-gray-900 rounded-md text-lg">Skills</a>
+            <a href="#projects" class="block px-4 py-3 text-gray-300 hover:bg-gray-900 rounded-md text-lg">Projects</a>
+            <a href="#contact" class="block px-4 py-3 text-gray-300 hover:bg-gray-900 rounded-md text-lg">Contact</a>
         </div>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section id="home" class="relative bg-gradient-to-br from-blue-600 via-indigo-700 to-purple-800 text-white min-h-screen flex items-center justify-center text-center section-padding pt-24 md:pt-0">
+        <section id="home" class="relative bg-gradient-to-br from-[#7000BF] to-[#290245] text-white min-h-screen flex items-center justify-center text-center section-padding pt-24 md:pt-0">
             <div class="container mx-auto px-4">
-                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 leading-tight animate-fade-in-up">Hi, I'm <span class="text-yellow-300">Your Name</span></h1>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 leading-tight animate-fade-in-up">Hi, I'm <span class="text-yellow-300">Aan Raza</span></h1>
                 <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-10 font-light animate-fade-in-up delay-100">A passionate <span class="font-semibold">Software Developer</span> specializing in crafting engaging web experiences.</p>
                 <a href="#projects" class="inline-block bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-bold py-3 px-8 sm:py-4 sm:px-10 rounded-full shadow-lg hover:from-yellow-500 hover:to-orange-600 transition duration-300 transform hover:scale-105 animate-fade-in-up delay-200 text-lg">View My Work</a>
             </div>
         </section>
 
         <!-- About Section -->
-        <section id="about" class="bg-gradient-to-br from-gray-100 to-white section-padding">
+        <section id="about" class="bg-gradient-to-br from-[#290245] to-[#000] text-white section-padding">
             <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8 md:gap-12">
                 <div class="md:w-1/3 flex justify-center">
-                    <img src="https://placehold.co/300x300/a78bfa/ffffff?text=Your+Photo" alt="Your Photo" class="rounded-full shadow-xl w-48 h-48 md:w-64 md:h-64 object-cover border-4 border-purple-400 transform hover:scale-105 transition duration-300">
+                    <img src="http://googleusercontent.com/file_content/1" alt="Aan Raza's Photo" class="rounded-full shadow-xl w-48 h-48 md:w-64 md:h-64 object-cover border-4 border-[#7000BF] transform hover:scale-105 transition duration-300">
                 </div>
                 <div class="md:w-2/3 text-center md:text-left">
-                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">About Me</h2>
-                    <p class="text-base sm:text-lg leading-relaxed mb-4 text-gray-700">
-                        Hello! I'm Your Name, a dedicated software developer with a strong focus on front-end technologies. I love bringing ideas to life through clean, efficient, and user-friendly code. My journey in tech started with a fascination for how websites work, and it quickly grew into a passion for building them.
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">About Me</h2>
+                    <p class="text-base sm:text-lg leading-relaxed mb-4 text-gray-300">
+                        Hello! I'm Aan Raza, a dedicated software developer with a strong focus on front-end technologies. I love bringing ideas to life through clean, efficient, and user-friendly code. My journey in tech started with a fascination for how websites work, and it quickly grew into a passion for building them.
                     </p>
-                    <p class="text-base sm:text-lg leading-relaxed text-gray-700">
+                    <p class="text-base sm:text-lg leading-relaxed text-gray-300">
                         I have experience working with modern JavaScript frameworks, responsive design, and various development tools. I'm always eager to learn new technologies and improve my craft. When I'm not coding, you can find me exploring new hiking trails, reading a good book, or experimenting with new recipes in the kitchen.
                     </p>
                 </div>
@@ -143,80 +143,80 @@
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="bg-gradient-to-br from-white to-blue-50 section-padding">
+        <section id="skills" class="bg-gradient-to-br from-[#000] to-[#290245] text-white section-padding">
             <div class="container mx-auto px-4 text-center">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-12">My Skills</h2>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-12">My Skills</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
                     <!-- Skill Card 1 -->
-                    <div class="card-gradient p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-100">
-                        <div class="text-5xl mb-4 text-indigo-600">🚀</div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">HTML5 & CSS3</h3>
-                        <p class="text-gray-600 text-sm">Semantic markup and modern styling.</p>
+                    <div class="card-gradient p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-700">
+                        <div class="text-5xl mb-4 text-[#7000BF]">🚀</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">HTML5 & CSS3</h3>
+                        <p class="text-gray-300 text-sm">Semantic markup and modern styling.</p>
                     </div>
                     <!-- Skill Card 2 -->
-                    <div class="card-gradient p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-100">
-                        <div class="text-5xl mb-4 text-indigo-600">💻</div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">JavaScript (ES6+)</h3>
-                        <p class="text-gray-600 text-sm">Dynamic and interactive web applications.</p>
+                    <div class="card-gradient p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-700">
+                        <div class="text-5xl mb-4 text-[#7000BF]">💻</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">JavaScript (ES6+)</h3>
+                        <p class="text-gray-300 text-sm">Dynamic and interactive web applications.</p>
                     </div>
                     <!-- Skill Card 3 -->
-                    <div class="card-gradient p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-100">
-                        <div class="text-5xl mb-4 text-indigo-600">⚛️</div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">React.js</h3>
-                        <p class="text-gray-600 text-sm">Building single-page applications.</p>
+                    <div class="card-gradient p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-700">
+                        <div class="text-5xl mb-4 text-[#7000BF]">⚛️</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">React.js</h3>
+                        <p class="text-gray-300 text-sm">Building single-page applications.</p>
                     </div>
                     <!-- Skill Card 4 -->
-                    <div class="card-gradient p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-100">
-                        <div class="text-5xl mb-4 text-indigo-600">🎨</div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Tailwind CSS</h3>
-                        <p class="text-gray-600 text-sm">Rapid UI development and responsive design.</p>
+                    <div class="card-gradient p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-700">
+                        <div class="text-5xl mb-4 text-[#7000BF]">🎨</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Tailwind CSS</h3>
+                        <p class="text-gray-300 text-sm">Rapid UI development and responsive design.</p>
                     </div>
                     <!-- Skill Card 5 -->
-                    <div class="card-gradient p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-100">
-                        <div class="text-5xl mb-4 text-indigo-600">💾</div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Node.js & Express</h3>
-                        <p class="text-gray-600 text-sm">Backend development and APIs.</p>
+                    <div class="card-gradient p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-700">
+                        <div class="text-5xl mb-4 text-[#7000BF]">💾</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Node.js & Express</h3>
+                        <p class="text-gray-300 text-sm">Backend development and APIs.</p>
                     </div>
                     <!-- Skill Card 6 -->
-                    <div class="card-gradient p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-100">
-                        <div class="text-5xl mb-4 text-indigo-600">🗄️</div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Databases (SQL/NoSQL)</h3>
-                        <p class="text-gray-600 text-sm">Data storage and management.</p>
+                    <div class="card-gradient p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-700">
+                        <div class="text-5xl mb-4 text-[#7000BF]">🗄️</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Databases (SQL/NoSQL)</h3>
+                        <p class="text-gray-300 text-sm">Data storage and management.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="bg-gradient-to-br from-blue-50 to-gray-100 section-padding">
+        <section id="projects" class="bg-gradient-to-br from-[#290245] to-[#000] text-white section-padding">
             <div class="container mx-auto px-4 text-center">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-12">My Projects</h2>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-12">My Projects</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                     <!-- Project Card 1 -->
-                    <div class="card-gradient rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-100">
-                        <img src="https://placehold.co/400x250/b388ff/ffffff?text=Project+1" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="card-gradient rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-700">
+                        <img src="https://placehold.co/400x250/7000BF/ffffff?text=Project+1" alt="Project 1" class="w-full h-48 object-cover">
                         <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-800 mb-2">E-commerce Platform</h3>
-                            <p class="text-gray-600 text-sm mb-4">A full-stack e-commerce application built with React, Node.js, and MongoDB.</p>
-                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium transition duration-300">View Project &rarr;</a>
+                            <h3 class="text-xl font-semibold text-white mb-2">E-commerce Platform</h3>
+                            <p class="text-gray-300 text-sm mb-4">A full-stack e-commerce application built with React, Node.js, and MongoDB.</p>
+                            <a href="#" class="text-[#7000BF] hover:text-[#5a0099] font-medium transition duration-300">View Project &rarr;</a>
                         </div>
                     </div>
                     <!-- Project Card 2 -->
-                    <div class="card-gradient rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-100">
-                        <img src="https://placehold.co/400x250/b388ff/ffffff?text=Project+2" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="card-gradient rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-700">
+                        <img src="https://placehold.co/400x250/7000BF/ffffff?text=Project+2" alt="Project 2" class="w-full h-48 object-cover">
                         <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Task Management App</h3>
-                            <p class="text-gray-600 text-sm mb-4">A responsive task manager with drag-and-drop functionality using Vue.js and Firebase.</p>
-                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium transition duration-300">View Project &rarr;</a>
+                            <h3 class="text-xl font-semibold text-white mb-2">Task Management App</h3>
+                            <p class="text-gray-300 text-sm mb-4">A responsive task manager with drag-and-drop functionality using Vue.js and Firebase.</p>
+                            <a href="#" class="text-[#7000BF] hover:text-[#5a0099] font-medium transition duration-300">View Project &rarr;</a>
                         </div>
                     </div>
                     <!-- Project Card 3 -->
-                    <div class="card-gradient rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-100">
-                        <img src="https://placehold.co/400x250/b388ff/ffffff?text=Project+3" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="card-gradient rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-700">
+                        <img src="https://placehold.co/400x250/7000BF/ffffff?text=Project+3" alt="Project 3" class="w-full h-48 object-cover">
                         <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Personal Blog Site</h3>
-                            <p class="text-gray-600 text-sm mb-4">A simple, elegant blog platform built with Next.js and Markdown for content.</p>
-                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium transition duration-300">View Project &rarr;</a>
+                            <h3 class="text-xl font-semibold text-white mb-2">Personal Blog Site</h3>
+                            <p class="text-gray-300 text-sm mb-4">A simple, elegant blog platform built with Next.js and Markdown for content.</p>
+                            <a href="#" class="text-[#7000BF] hover:text-[#5a0099] font-medium transition duration-300">View Project &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -224,37 +224,37 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="bg-gradient-to-br from-white to-blue-50 section-padding">
+        <section id="contact" class="bg-gradient-to-br from-[#000] to-[#290245] text-white section-padding">
             <div class="container mx-auto px-4 text-center max-w-2xl">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-8">Get In Touch</h2>
-                <p class="text-base sm:text-lg leading-relaxed mb-8 text-gray-700">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8">Get In Touch</h2>
+                <p class="text-base sm:text-lg leading-relaxed mb-8 text-gray-300">
                     Have a question or want to work together? Feel free to reach out! I'm always open to new opportunities and collaborations.
                 </p>
                 <!-- Formspree integration: Action attribute updated with your provided URL -->
-                <form action="https://formspree.io/f/mdkdkody" method="POST" class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                <form action="https://formspree.io/f/mdkdkody" method="POST" class="bg-[#222] p-8 rounded-xl shadow-lg border border-gray-700">
                     <div class="mb-6">
-                        <label for="name" class="block text-left text-gray-700 text-sm font-bold mb-2">Name</label>
-                        <input type="text" id="name" name="name" class="shadow-sm appearance-none border border-gray-300 rounded-md w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition duration-200" placeholder="Your Name" required>
+                        <label for="name" class="block text-left text-gray-300 text-sm font-bold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="shadow-sm appearance-none bg-gray-800 border border-gray-700 rounded-md w-full py-3 px-4 text-gray-200 leading-tight focus:outline-none focus:ring-2 focus:ring-[#7000BF] focus:border-transparent transition duration-200" placeholder="Your Name" required>
                     </div>
                     <div class="mb-6">
-                        <label for="email" class="block text-left text-gray-700 text-sm font-bold mb-2">Email</label>
-                        <input type="email" id="email" name="email" class="shadow-sm appearance-none border border-gray-300 rounded-md w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition duration-200" placeholder="your.email@example.com" required>
+                        <label for="email" class="block text-left text-gray-300 text-sm font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="shadow-sm appearance-none bg-gray-800 border border-gray-700 rounded-md w-full py-3 px-4 text-gray-200 leading-tight focus:outline-none focus:ring-2 focus:ring-[#7000BF] focus:border-transparent transition duration-200" placeholder="your.email@example.com" required>
                     </div>
                     <div class="mb-6">
-                        <label for="subject" class="block text-left text-gray-700 text-sm font-bold mb-2">Subject/Topic</label>
-                        <input type="text" id="subject" name="subject" class="shadow-sm appearance-none border border-gray-300 rounded-md w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition duration-200" placeholder="e.g., Project Collaboration, Job Inquiry" required>
+                        <label for="subject" class="block text-left text-gray-300 text-sm font-bold mb-2">Subject/Topic</label>
+                        <input type="text" id="subject" name="subject" class="shadow-sm appearance-none bg-gray-800 border border-gray-700 rounded-md w-full py-3 px-4 text-gray-200 leading-tight focus:outline-none focus:ring-2 focus:ring-[#7000BF] focus:border-transparent transition duration-200" placeholder="e.g., Project Collaboration, Job Inquiry" required>
                     </div>
                     <div class="mb-6">
-                        <label for="message" class="block text-left text-gray-700 text-sm font-bold mb-2">Message</label>
-                        <textarea id="message" name="message" rows="6" class="shadow-sm appearance-none border border-gray-300 rounded-md w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition duration-200" placeholder="Your message..." required></textarea>
+                        <label for="message" class="block text-left text-gray-300 text-sm font-bold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="6" class="shadow-sm appearance-none bg-gray-800 border border-gray-700 rounded-md w-full py-3 px-4 text-gray-200 leading-tight focus:outline-none focus:ring-2 focus:ring-[#7000BF] focus:border-transparent transition duration-200" placeholder="Your message..." required></textarea>
                     </div>
                     <!-- Formspree will handle the success/error messages, so we remove the custom JS handler for submission -->
                     <div class="flex flex-col sm:flex-row justify-center gap-4">
-                        <button type="button" id="draftMessageBtn" class="bg-gradient-to-r from-purple-600 to-indigo-700 hover:from-purple-700 hover:to-indigo-800 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 flex items-center justify-center text-lg">
+                        <button type="button" id="draftMessageBtn" class="bg-gradient-to-r from-[#7000BF] to-purple-900 hover:from-purple-900 hover:to-[#290245] text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#7000BF] focus:ring-offset-2 flex items-center justify-center text-lg">
                             <span id="draftMessageText">✨ Draft Message</span>
                             <div id="draftMessageSpinner" class="hidden ml-2 w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
                         </button>
-                        <button type="submit" class="bg-gradient-to-r from-indigo-600 to-blue-700 hover:from-indigo-700 hover:to-blue-800 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 text-lg">Send Message</button>
+                        <button type="submit" class="bg-gradient-to-r from-[#290245] to-gray-900 hover:from-gray-900 hover:to-black text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#7000BF] focus:ring-offset-2 text-lg">Send Message</button>
                     </div>
                 </form>
             </div>
@@ -262,18 +262,18 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8 text-center rounded-t-lg shadow-inner">
+    <footer class="bg-[#000] text-white py-8 text-center rounded-t-lg shadow-inner">
         <div class="container mx-auto px-4">
-            <p class="mb-4 text-gray-400">&copy; 2025 Your Name. All rights reserved.</p>
+            <p class="mb-4 text-gray-300">&copy; 2025 Aan Raza. All rights reserved.</p>
             <div class="flex justify-center space-x-6">
-                <a href="#" class="text-gray-400 hover:text-indigo-400 transition duration-300 rounded-full p-2 hover:bg-gray-700">
+                <a href="#" class="text-gray-400 hover:text-[#7000BF] transition duration-300 rounded-full p-2 hover:bg-gray-800">
                     <!-- Replace with actual social media icons/links -->
                     LinkedIn
                 </a>
-                <a href="#" class="text-gray-400 hover:text-indigo-400 transition duration-300 rounded-full p-2 hover:bg-gray-700">
+                <a href="#" class="text-gray-400 hover:text-[#7000BF] transition duration-300 rounded-full p-2 hover:bg-gray-800">
                     GitHub
                 </a>
-                <a href="#" class="text-gray-400 hover:text-indigo-400 transition duration-300 rounded-full p-2 hover:bg-gray-700">
+                <a href="#" class="text-gray-400 hover:text-[#7000BF] transition duration-300 rounded-full p-2 hover:bg-gray-800">
                     Twitter
                 </a>
             </div>
@@ -281,7 +281,7 @@
     </footer>
 
     <!-- Scroll to Top Button -->
-    <button id="scrollToTopBtn" class="fixed bottom-8 right-8 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hidden">
+    <button id="scrollToTopBtn" class="fixed bottom-8 right-8 bg-[#7000BF] text-white p-3 rounded-full shadow-lg hover:bg-[#5a0099] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#7000BF] focus:ring-offset-2 hidden">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
         </svg>
