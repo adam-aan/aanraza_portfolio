@@ -183,6 +183,18 @@
                         <h3 class="text-xl font-semibold text-white mb-2">Databases (SQL/NoSQL)</h3>
                         <p class="text-gray-300 text-sm">Data storage and management.</p>
                     </div>
+                    <!-- New Skill Card 7: Video Editing -->
+                    <div class="card-gradient p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-700">
+                        <div class="text-5xl mb-4 text-[#7000BF]">🎬</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Video Editing</h3>
+                        <p class="text-gray-300 text-sm">Crafting engaging video content.</p>
+                    </div>
+                    <!-- New Skill Card 8: Thumbnail Editing -->
+                    <div class="card-gradient p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-700">
+                        <div class="text-5xl mb-4 text-[#7000BF]">🖼️</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Thumbnail Editing</h3>
+                        <p class="text-gray-300 text-sm">Designing eye-catching thumbnails.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -364,52 +376,4 @@
                 let prompt = `Draft a professional email message for a portfolio website contact form. The sender's name is "${name || 'User'}" and their email is "${email || 'not provided'}". The subject or topic of their inquiry is "${subject}". Keep the message concise and polite, suitable for an initial contact.`;
 
                 let chatHistory = [];
-                chatHistory.push({ role: "user", parts: [{ text: prompt }] });
-                const payload = { contents: chatHistory };
-                const apiKey = ""; // Canvas will automatically provide the API key
-                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
-
-                const response = await fetch(apiUrl, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
-                });
-
-                const result = await response.json();
-
-                if (result.candidates && result.candidates.length > 0 &&
-                    result.candidates[0].content && result.candidates[0].content.parts &&
-                    result.candidates[0].content.parts.length > 0) {
-                    const text = result.candidates[0].content.parts[0].text;
-                    messageTextarea.value = text; // Populate the message textarea
-                } else {
-                    console.error('Gemini API response structure unexpected:', result);
-                    const messageBox = document.createElement('div');
-                    messageBox.textContent = 'Error drafting message. Please try again.';
-                    messageBox.className = 'fixed bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 bg-red-500 text-white px-6 py-3 rounded-lg shadow-xl z-50 animate-fade-in';
-                    document.body.appendChild(messageBox);
-                    setTimeout(() => {
-                        messageBox.classList.add('animate-fade-out');
-                        messageBox.addEventListener('animationend', () => messageBox.remove());
-                    }, 3000);
-                }
-            } catch (error) {
-                console.error('Error calling Gemini API:', error);
-                const messageBox = document.createElement('div');
-                messageBox.textContent = 'Failed to connect to the drafting service. Please check your network.';
-                messageBox.className = 'fixed bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 bg-red-500 text-white px-6 py-3 rounded-lg shadow-xl z-50 animate-fade-in';
-                document.body.appendChild(messageBox);
-                setTimeout(() => {
-                    messageBox.classList.add('animate-fade-out');
-                    messageBox.addEventListener('animationend', () => messageBox.remove());
-                }, 3000);
-            } finally {
-                // Hide loading spinner and re-enable button
-                draftMessageText.textContent = '✨ Draft Message';
-                draftMessageSpinner.classList.add('hidden');
-                draftMessageBtn.disabled = false;
-            }
-        });
-    </script>
-</body>
-</html>
+                chatHist
